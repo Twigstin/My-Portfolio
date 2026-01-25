@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Aniobi | Frontend Developer - Small Business & Creator Websites</title>
+    <meta name="description" content="I build fast, responsive websites for small businesses and creators. Specializing in clean UI, mobile-first layouts, and design-to-code accuracy.">
+    <meta name="keywords" content="frontend developer, web developer, responsive websites, HTML, CSS, JavaScript, Tailwind CSS, small business websites, portfolio, personal brand websites, creator websites">
+    <meta name="author" content="Austin Aniobi">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Austin Aniobi",
+        "jobTitle": "Frontend Developer",
+        "url": "https://Twigstin.github.io",
+        "sameAs": [
+        "https://github.com/Twigstin",
+        "https://twitter.com/twigstin7"
+        ]
+    }
+    </script>
+</head>
+
+<body class="text-[18px] font-[Inter] pt-[10px] bg-[rgb(10,10,10)]">
+    <header class="bg-[rgba(30,30,30,0.4)] z-50 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] fixed top-[25px] text-white rounded-[50px] left-[7%] w-[86%] flex py-[20px] px-[30px]">
+        <div class="flex justify-between w-full">
+            <a href="#" class="text-3xl font-[Montserrat] py-[5px]">Austin.</a>
+            <nav class="desktop-menu w-[570px] text-[18px] flex justify-between">
+                <a href="#projects-section" class="py-[10px] head-hover">Projects</a>
+                <a href="#about-section" class="py-[10px] head-hover">About</a>
+                <a href="#skills-section" class="py-[10px] head-hover">Skills</a>
+                <a href="#contact-section" class="py-[10px] head-hover">Contacts</a>
+                <a href="#contact-section" class="get-in-touch-btn py-[10px] px-[30px] rounded-[20px] border-2 border-[rgb(10,10,10)] bg-[rgb(10,10,10)] text-white">Get In Touch</a>
+            </nav>
+            <div class="menu-btn hidden">
+                <button class="py-[10px] px-[15px] text-[16px] font-[Montserrat] rounded-[30px] border-2 border-[rgb(10,10,10)] bg-[rgb(10,10,10)] text-white">Menu</button>
+            </div>
+        </div>
+    </header>
+    <nav class="menu transition-[top] duration-[400ms] ease-in-out w-[90%] left-[5%] h-[90%] fixed top-[-100%] p-[10px] z-100 rounded-[40px] text-white bg-[#4f46e5]">
+        <div class="reveal w-full flex justify-between p-[10px]">
+            <a href="#" class="text-3xl font-[Montserrat] py-[5px]">Austin.</a>
+            <div class="menu-close-btn">
+                <button class="py-[10px] px-[15px] text-[16px] font-[Montserrat] rounded-[30px] border border-white bg-transparent text-white">Close</button>
+            </div>
+        </div>
+        <ul class="reveal menu-content text-2xl font-[Montserrat-thin]">
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contacts</a></li>
+            <li><a href="#contact-section">Get In Touch</a></li>
+        </ul>
+    </nav>
+    <div id="success-modal" class="modal fixed inset-0 bg-[rgba(0,0,0,0.7)] flex hidden items-center justify-center z-900 h-full w-full">
+                <div class="modal-box p-[20px] text-white font-[Montserrat] rounded-[20px] max-h-[200px] w-50% text-center bg-[rgba(30,30,30,0.4)] backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                    <h3>Message Sent 🎉</h3>
+                    <p>Thanks for reaching out. I’ll get back to you shortly.</p>
+                    <div class="w-full text-center mt-[20px]">
+                        <button type="button" id="close-modal" class="w-full p-[15px] rounded-[20px] border-2 border-[rgba(30,30,30,0.4)] bg-[rgba(30,30,30,0.4)] backdrop-blur-md shadow-[0_2px_8px_rgba(0,0,0,0.35)]">Okay</button>
+                    </div>
+                </div>
+    </div>
+    <main class="reveal w-[90%] m-auto bg-[rgb(10,10,10)] pb-[50px] text-white rounded-tl-[40px] rounded-tr-[40px]">
+        <section id="hero-section" class="reveal relative pb-[30px] mb-[50px]">
+            <div class="reveal hero-section px-[30px] pt-[150px]">
+                <div class="reveal">
+                    <div id="profile-picture-two" class="card reveal hidden profile-picture-two w-[150px] h-[150px] mb-[30px] rounded-full">
+                        <div class="w-full h-full bg-white rounded-full">
+                            <img src="./images/austin-avatar.JPG" alt="Image of Austin's avatar" loading="lazy" class="w-full h-full rounded-full">
+                        </div>
+                    </div>
+                    <p class="reveal text-xl mb-[10px]">Hey 👋, I'm Austin Aniobi</p>
+                    <h1 class="reveal text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-[Montserrat] mb-[10px] font-[Montserrat] mb-[10px]">Frontend Developer</h1>
+                    <h2 class="reveal text-xl sm:text-2xl md:text-2xl lg:text-2xl font-[Montserrat] mb-[10px]">I build clean, responsive and functional websites for small businesses and creators.</h2>
+                    <p class="reveal text-[18px]">Specializing in clean UI, mobile-first layouts, and design-to-code accuracy.</p>
+            
+                    <div class="reveal flex mt-[20px]">
+                        <a href="#contact-section">
+                            <button type="button" class="get-in-touch-btn bttn py-[10px] px-[30px] rounded-[20px] mr-[30px] border-2 border-[rgb(10,10,10)] bg-[rgb(10,10,10)] text-white">Get in Touch</button>
+                        </a>
+                        <a href="#projects-section">
+                            <button type="button" class="bttn py-[10px] px-[30px] rounded-[20px] border-2 border-[rgba(30,30,30,0.4)] bg-[rgba(30,30,30,0.4)] backdrop-blur-md shadow-[0_2px_8px_rgba(0,0,0,0.35)]">View Projects <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </a>
+                    </div>                
+                </div>
+                <div class="reveal p-[30px] profile-pic flex items-center justify-center">
+                    <div id="profile-picture" class="w-[400px] h-[400px] m-auto border border-[rgb(10,10,10)] rounded-full p-[50px]">
+                        <div class="card w-full h-full bg-white rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                            <img src="./images/austin-avatar.JPG" alt="Image of Austin's Avatar" loading="lazy" class="w-full h-full rounded-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal h-500px w-full mt-30px left-0 sliding-projects overflow-x-hidden">
+                <div class="flex h-full gap-[20px] p-[30px] overflow-x-hidden flex-nowrap bg-transparent slide-in">
+                    <div class="slide-project shrink-0 card">
+                        <div class="w-full h-full bg-amber-500 rounded-[10px] shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                            <img src="./images/twigNotes-ss.png" alt="Image of Twig notes app" loading="lazy" class="w-full h-full rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="slide-project shrink-0 card">
+                        <div class="w-full h-full bg-amber-500 rounded-[10px] shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                            <img src="./images/synthera-ss.JPG" alt="Image of synthera official website landing page" loading="lazy" class="w-full h-full rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="slide-project shrink-0 card">
+                        <div class="w-full h-full bg-amber-500 rounded-[10px] shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                            <img src="./images/siteSpring-ss.JPG" alt="Image of SiteSpring official website landing page" loading="lazy" class="w-full h-full rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="slide-project shrink-0 card">
+                        <div class="w-full h-full bg-amber-500 rounded-[10px] shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                            <img src="./images/monexa-ss.JPG" alt="Image of Monexa official website landing page" loading="lazy" class="w-full h-full rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="slide-project shrink-0 card">
+                        <div class="w-full h-full bg-amber-500 rounded-[10px] shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">
+                            <img src="./images/voteza-ss.JPG" alt="Image of Voteza official website landing page" loading="lazy" class="w-full h-full rounded-[10px]">
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        
+        <section id="about-section" class="reveal section my-[50px]">
+            <h2 class="reveal text-5xl mb-[30px] font-[Montserrat]">About Me</h2>
+            <div class="about-align">
+            <div class="reveal">
+                <p class="mb-[40px]  m-auto">I'm Austin, a Frontend Developer who builds fast, responsive, and user-friendly websites for small businesses and creators. Using HTML, CSS, JavaScript, and Tailwind CSS, I turn design ideas into functional, polished web interfaces.</p>
+            
+                <p class="m-auto">I've built a range of projects - from productivity web apps to modern landing pages - and I approach every project with a focus on clean UI, mobile-first layouts, and design-to-code accuracy. I'm currently leveling up my skills in software engineering, solving challenges, and creating impact through high-quality web experiences, and I'm passionate about making a difference and exploring new frontiers in tech.</p>
+            </div>
+            <div class="reveal card max-h-full min-h-[400px] about-alt">
+                <div class="w-[400px] h-[400px] m-auto">
+                    <img src="./images/austin-avatar-two.PNG" alt="Image of Twig notes app" loading="lazy" class="w-full h-full rounded-[10px]">
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="projects-section" class="reveal section">
+            <h2 class="reveal text-5xl mb-[30px] font-[Montserrat]">Projects</h2>
+            <p class="reveal">Here are some of my selected projects showcasing clean UI, responsive layouts, and solid design-to-code execution.</p>
+            <div class="all-projects reveal">
+                <div class="reveal project">
+                    <div class="w-full h-[150px] m-auto shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[10px] mb-[20px]">
+                        <img src="./images/twigNotes-ss.png" alt="Image of Twig notes app" loading="lazy" class="card w-full h-full rounded-[10px]">
+                    </div>
+                    <div class="block">
+                        <h3 class="text-3xl font-[Montserrat]">Twig Notes</h3>
+                        <p class="project-desc">An all-in-one notes and tasks app designed for fast capture and organization. Includes full item management, favorites, smart search, and persistent data so users never lose their progress</p>
+                        <p>HTML + CSS + JavaScript</p>
+                        <a href="https://notes-app-six-drab.vercel.app/" target="_blank" rel="noopener"><button type="button" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+                <div class="reveal project">
+                    <div class="w-full h-[150px] m-auto shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[10px] mb-[20px]">
+                        <img src="./images/synthera-ss.JPG" alt="Image of Synthera official landing page" loading="lazy" class="card w-full h-full rounded-[10px]">
+                    </div>
+                    <div class="block">
+                        <h3 class="text-3xl font-[Montserrat]">Synthera</h3>
+                        <p class="project-desc">A curated library of tools and articles focused on inclusive design, presented in a clear and structured interface that encourages easy exploration and learning.</p>
+                        <p>HTML + CSS + JavaScript</p>
+                        <a href="https://twigstin.github.io/Stark-Website-Clone/" target="_blank" rel="noopener"><button type="button" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+                <div class="reveal project">
+                    <div class="w-full h-[150px] m-auto shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[10px] mb-[20px]">
+                        <img src="./images/siteSpring-ss.JPG" alt="Image of SiteSpring official landing page" loading="lazy" class="card w-full h-full rounded-[10px]">
+                    </div>
+                    <div class="block">
+                        <h3 class="text-3xl font-[Montserrat]">SiteSpring</h3>
+                        <p class="project-desc">An integrated online platform for domain services, site building, and hosting, crafted to simplify getting a business online with straightforward navigation and clear resource access.</p>
+                        <p>HTML + CSS + JavaScript</p>
+                        <a href="https://twigstin.github.io/GoDaddy-Website-Clone/" target="_blank" rel="noopener"><button type="button" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+                <div class="reveal project">
+                    <div class="w-full h-[150px] m-auto shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[10px] mb-[20px]">
+                        <img src="./images/monexa-ss.JPG" alt="Image of Monexa official landing page" loading="lazy" class="card w-full h-full rounded-[10px]">
+                    </div>
+                    <div class="block">
+                        <h3 class="text-3xl font-[Montserrat]">Modexa</h3>
+                        <p class="project-desc">A polished marketplace for creative hardware and accessories, featuring an organized product catalog and smooth browsing experience tailored to designers, editors, and digital professionals.</p>
+                        <p>HTML + JavaScript + Tailwind CSS</p>
+                        <a href="https://twigstin.github.io/Monogram/" target="_blank" rel="noopener"><button type="button" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+                <div class="reveal project">
+                    <div class="w-full h-[150px] m-auto shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[10px] mb-[20px]">
+                        <img src="./images/voteza-ss.JPG" alt="Image of Voteza official landing page" loading="lazy" class="card w-full h-full rounded-[10px]">
+                    </div>
+                    <div class="block">
+                        <h3 class="text-3xl font-[Montserrat]">Voteza</h3>
+                        <p class="project-desc">A lightweight voting site built to collect and display votes for candidates in an organized and transparent way, making participation fast and accessible for users.</p>
+                        <p>HTML + CSS + JavaScript</p>
+                        <a href="https://twigstin.github.io/Voting-Site/" target="_blank" rel="noopener"><button type="button" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills-section" class="reveal section my-[50px]">
+            <h2 class="reveal text-5xl mb-[30px] font-[Montserrat] text-center">Skills</h2>
+            <div class="reveal m-auto w-full bg-transparent">
+                <div class="reveal m-auto w-full rounded-[20px] p-[30px] slide-bg-one mb-[30px]">
+                    <h3 class="m-auto rounded-[20px] text-black font-[Montserrat] text-3xl p-[20px] w-fit bg-[rgba(250,250,250,0.3)] z-10 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">Frontend</h3>
+                    
+                    <div class="w-full overflow-x-hidden mt-[20px] flex p-[20px] bg-[rgba(30,30,30,0.4)] z-50 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[20px] overflow-x-hidden flex-nowrap bg-transparent">
+                        <div class="w-max slide-in-one flex gap-[20px]">
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#E34F26]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>                                
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">HTML</p>
+                        </div>
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#663399]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS</title><path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">CSS</p>
+                        </div>
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#06B6D4]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">Tailwind CSS</p>
+                        </div>
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#F7DF1E]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>JavaScript</title><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">JavaScript</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal m-auto w-full rounded-[20px] p-[30px] slide-bg-two mb-[30px]">
+                    <h3 class="m-auto rounded-[20px] text-black font-[Montserrat] text-3xl p-[20px] w-fit bg-[rgba(250,250,250,0.3)] z-10 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">Practices</h3>
+                    <div class="w-full overflow-x-hidden mt-[20px] flex p-[20px] gap-[20px] bg-[rgba(30,30,30,0.4)] z-50 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[20px] flex-nowrap bg-transparent">
+                        <div class="w-max slide-in-two flex gap-[20px]">
+                        <div class="slide-skill">
+                            <div class="text-black font-[Montserrat] text-xl">
+                                <p>Clean Code</p>
+                            </div>
+                        </div>
+                        <div class="slide-skill">
+                            <div class="text-black font-[Montserrat] text-xl">
+                                <p>Spacing & Typography</p>
+                            </div>
+                        </div>
+                        <div class="slide-skill">
+                            <div class="text-black font-[Montserrat] text-xl">
+                                <p>Debugging</p>
+                            </div>
+                        </div>
+                        <div class="slide-skill">
+                            <div class="text-black font-[Montserrat] text-xl">
+                                <p>Design-to-Code Accuracy</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal m-auto w-full rounded-[20px] p-[30px] slide-bg-three mb-[30px]">
+                    <h3 class="m-auto rounded-[20px] text-black font-[Montserrat] text-3xl p-[20px] w-fit bg-[rgba(250,250,250,0.3)] z-10 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)]">Tools</h3>
+                    <div class="w-full overflow-x-hidden mt-[20px] flex p-[20px] gap-[20px] bg-[rgba(30,30,30,0.4)] z-50 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.45),0_2px_8px_rgba(0,0,0,0.35)] rounded-[20px] overflow-x-hidden flex-nowrap bg-transparent">
+                        <div class="w-max slide-in-three flex gap-[20px]">
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#F05032]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Git</title><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">Git</p>
+                        </div>
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#181717]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">GitHub</p>
+                        </div>
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#F24E1E]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Figma</title><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">Figma</p>
+                        </div>
+                        <div class="skill-slide">
+                            <div class="w-[200px] h-[200px] rounded-[20px] mb-[20px]">
+                                <svg role="img" class="w-full h-full rounded-20px fill-[#000000]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Vercel</title><path d="m12 1.608 12 20.784H0Z"/></svg>
+                            </div>
+                            <p class="text-center text-black font-[Montserrat] text-xl">Vercel</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="contact-section" class="section">
+            <h2 class="reveal text-5xl font-[Montserrat] mb-[30px]">Contact Me</h2>
+            <p class="reveal">I'm always open to new opportunities, collaborations, and meaningful conversations. If you have a project in mind, an idea to explore, or just want to connect, feel free to reach out.</p>
+            <div class="reveal contact-align">
+            <div class="reveal card h-full rounded-[20px] contact-alt-box">
+                <div class="w-full h-full">
+                    <img src="./images/dev-setup-img.PNG" alt="Image of Twig notes app" loading="lazy" class="w-full h-full rounded-[10px]">
+                </div>
+            </div>
+            <form name="contact" method="POST" data-netlify="true" id="contact-form" class="reveal contact-form w-full text-[rgb(220,220,220)] m-auto bg-[rgba(80,80,80,0.4)] backdrop-blur-md p-[20px] rounded-[20px]">
+                <p class="text-center text-3xl font-[Montserrat] mb-[40px]">Send me a message</p>
+                <div class="form-align mb-[20px]">
+                    <label for="name">Name
+                        <input id="name" required type="text" name="name" placeholder="Enter your name" class="mt-[10px] w-full py-[15px] px-[10px] rounded-[10px] text-black bg-[rgb(200,200,200)]">
+                    </label>
+                    <label for="email">Email
+                        <input id="email" required type="email" name="email" placeholder="Enter your email address" class="mt-[10px] w-full py-[15px] px-[10px] bg-[rgb(200,200,200)] rounded-[10px] text-black">
+                    </label>
+                </div>
+                <label for="message-box">Message
+                    <textarea name="message" required placeholder="Write your message here..." id="message-box" class="mt-[10px] w-full min-h-[200px] py-[10px] px-[10px] bg-[rgb(200,200,200)] rounded-[10px] text-black"></textarea>
+                </label>
+                <div class="w-full text-center mt-[20px]">
+                    <button type="submit" class="w-full p-[20px] rounded-[10px] bg-[rgb(10,10,10)] text-white get-in-touch-bttn border-2 border-[rgb(10,10,10)]">Send Message</button>
+                </div>
+            </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="reveal block w-[90%] border-t-[2px] border-t-[white]  m-auto text-white bg-[rgb(10,10,10)] py-[50px]">
+        <div class="reveal foot-brand w-full flex justify-between mb-[20px]">
+            <p class="reveal mb-[30px] font-[Montserrat] text-3xl">Austin.</p>
+            <a href="#contact-section" class="reveal">
+                <button type="button" class="getInTouchBtn py-[10px] px-[30px] rounded-[30px] font-[Montserrat] border-2 border-white bg-white text-black">Get in Touch</button>
+            </a>
+        </div>
+        <div class="copyright w-full flex justify-between">
+            <small class="reveal text-[rgb(150,150,150)]">© 2026 Austin. All rights reserved.</small>
+            <ul class="reveal flex w-[200px] justify-between socials">
+                <li class="card"><a href="https://x.com/twigstin7" target="_blank" rel="noopener" class="rounded-full p-[5px] bg-white text-[black]"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="card"><a href="https://github.com/Twigstin" target="_blank" rel="noopener" class="rounded-full p-[5px] bg-white  text-black"><i class="fa-brands fa-github"></i></a></li>
+                <li class="card"><a href="https://wa.me/2348065571520?text=Hello%20Austin%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity." target="_blank" rel="noopener" class="rounded-full p-[5px] bg-white  text-[#25D366]"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="card"><a href="mailto:aniobi653@gmail.com?subject=Project%20Inquiry&body=Hello%20Austin%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project.%20Please%20let%20me%20know%20your%20availability.%0A%0ABest%20regards%2C" target="_blank" rel="noopener" class="rounded-full p-[5px] bg-white  text-[#6E6E6E]"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
