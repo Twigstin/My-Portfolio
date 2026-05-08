@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 const menuIcon = document.querySelector(".menu-btn");
 const menuCloseButton = document.querySelector(".menu-close-btn");
 const menuLinks = menu.querySelectorAll("a");
+const submitBtn = document.getElementById("submit-btn");
 
 
 
@@ -72,24 +73,36 @@ const modal = document.getElementById("success-modal");
 const closeBtn = document.getElementById("close-modal");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const formData = new FormData(form);
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+  // Lock the button
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Sending...";
+
+  const formData = new FormData(form);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => {
+      form.reset();
+      modal.classList.remove("hidden");
     })
-      .then(() => {
-        form.reset(); // ✅ clears inputs
-        modal.classList.remove("hidden"); // ✅ show popup
-      })
-      .catch((err) => {
-        alert("Message failed to send.");
-        console.error(err);
-      });
-  });
+    .catch((err) => {
+      alert("Message failed to send.");
+      console.error(err);
+    })
+    .finally(() => {
+      // Restore the button either way
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    });
+});
 
 closeBtn.addEventListener("click", (e) => {
     e.stopPropagation();
