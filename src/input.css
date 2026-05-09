@@ -101,7 +101,20 @@ section {
 }
 
 .btn {
-    @apply p-[10px] text-[16px] mt-[20px] bg-[#4f46e5] rounded-[10px];
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.13s ease;
+    background-color: #4f46e5;
+}
+
+.btn:hover {
+    background-color: #4f46e5;
+}
+
+.btn:active {
+    transform: scale(0.96);
 }
 
 .skill-slide {
@@ -285,9 +298,6 @@ button, a {
     cursor: pointer;
 }
 
-.btn:hover {
-    @apply bg-[#3b82f6];
-}
 
 .get-in-touch-btn:hover {
     @apply bg-[rgb(50,50,50)] border-[rgb(20,20,20)];
