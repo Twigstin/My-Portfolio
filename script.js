@@ -180,7 +180,7 @@ const projects = [
         techs: 'React + Vite + Supabase + JavaScript',
         imgUrl: './images/roundup-ss.png',
         imgAlt: 'Image of Roundup dashboard',
-        liveLink: 'https://roundup-mu.vercel.app/'
+        liveLink: 'https://getroundup.app'
     },
     {
         title: 'Twig Notes',
